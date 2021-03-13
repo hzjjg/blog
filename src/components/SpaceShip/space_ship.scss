@@ -1,0 +1,35 @@
+.SpaceShip {
+    position: absolute;
+    z-index: 2;
+    left: -120;
+    top: 0;
+    width: 120px;
+    height: 23px;
+    background: no-repeat url(../../images/unsc_1.png) center/contain;
+
+    &__flame {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -6px;
+        width: 10px;
+        height: 6px;
+        background: no-repeat url(../../images/ship_flame.png) center/100% 100%;
+        transform-origin: 100% 50%;
+        animation: flame 1.6s infinite;
+    }
+
+    @keyframes flame {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: .7;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

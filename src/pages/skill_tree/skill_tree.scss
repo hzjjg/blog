@@ -1,0 +1,29 @@
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+    height: 100%;
+}
+
+.SkillTreePage {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+
+    .bg-cover,
+    .bg {
+        z-index: 0;
+        position: absolute;
+        height: 130%;
+        width: 130%;
+        left: -15%;
+        top: -15%;
+        background: url(../../images/sky_bg.jpg) center/cover;
+    }
+
+    .bg-cover {
+        opacity: .4;
+        background: url(../../images/sky_bg_cover.png) center/cover;
+    }
+}
