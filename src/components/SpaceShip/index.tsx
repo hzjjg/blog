@@ -45,7 +45,6 @@ class SpaceShip extends React.Component<{}, State> {
     updatePos = () => {
         const [curX, curY] = [this.state.pos[0], this.state.pos[1]]
         const [restX, restY] = [this.targetPos[0] - curX, this.targetPos[1] - curY]
-
         const restDistance = Math.sqrt(Math.pow(restX, 2) + Math.pow(restY, 2))
 
         // if (restDistance < 4) {
@@ -75,8 +74,6 @@ class SpaceShip extends React.Component<{}, State> {
         this.setState({
             pos: [nextX, nextY]
         })
-
-        console.log(this.targetPos, [nextX, nextY]);
 
         this.setState({
             posStyle: {
